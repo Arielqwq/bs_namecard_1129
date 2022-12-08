@@ -65,6 +65,25 @@
       .card .img {
         width: 40%;
         height: 100%;
+        position: relative;
+      }
+
+      .card .img::before {
+        content: url(./images/right_shadow.png);
+        top: -40px;
+        left: 1100px;
+        position: absolute;
+        /* background: */
+        z-index: 1;
+      }
+
+      .card .img::after {
+        content: url(./images/left_shadow.png);
+        bottom: -50px;
+        left: -50px;
+        position: absolute;
+        /* background: */
+        z-index: 1;
       }
 
       .container .card .card-subtitle {
